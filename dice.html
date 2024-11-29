@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./img/1.png" id="shubham" height="190px">
+     <button id="radha" onclick="roll()">next</button>
+     <script>
+         
+         function roll(){
+            var random = Math.floor(Math.random()*6)+1;
+
+
+            if(random == 1 ){
+                document.getElementById("shubham").src="./img/1.png"
+                console.log("1")
+            }
+
+
+            else if(random == 2 ){
+                document.getElementById("shubham").src = "./img/2.png"
+                
+                console.log("2")
+            }
+            
+            else if(random == 3 ){
+                document.getElementById("shubham").src = "img/3.png"
+                console.log("3")
+            }
+            
+            else if(random == 4 ){
+                document.getElementById("shubham").src = "img/4.png"
+                console.log("4")
+            }
+            
+            else if(random == 5 ){
+                document.getElementById("shubham").src = "img/5.png"
+                console.log("5")
+            }
+            
+            else
+               {
+                document.getElementById("shubham").src = "img/6.png"
+                console.log("6")
+            
+               }
+
+         }
+     </script>
+</body>
+</html>
